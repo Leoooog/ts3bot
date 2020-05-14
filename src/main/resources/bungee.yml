@@ -1,0 +1,4 @@
+name: XGPTsBot
+main: eu.xgp.ts3bot.Ts3BotPlugin
+author: Leog_04
+version: 1.0.0

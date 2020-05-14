@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ts3bot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ts3bot_jar</output-path>
+    <root id="archive" name="ts3bot.jar">
+      <element id="module-output" name="ts3bot" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../teamspeak3-api-1.0.14.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
