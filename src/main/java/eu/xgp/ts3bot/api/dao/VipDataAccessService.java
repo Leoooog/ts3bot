@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class VipDataAccessService {
-    private String server;
+    private final String server;
 
     public VipDataAccessService(String server) {
         this.server = server;
@@ -23,8 +23,8 @@ public class VipDataAccessService {
         List<VipPlayer> playerInfoList = new ArrayList<>();
         for (JsonElement e : jsonArray) {
             JsonObject obj = e.getAsJsonObject();
-            String mcUuid = obj.get("mcUuid").getAsString();
-            String tsUuid = obj.get("tsUuid").getAsString();
+            String mcUuid = obj.get("mc_uuid").getAsString();
+            String tsUuid = obj.get("ts_uuid").getAsString();
             String vip = obj.get("vip").getAsString();
             playerInfoList.add(new VipPlayer(mcUuid, tsUuid, vip));
         }
